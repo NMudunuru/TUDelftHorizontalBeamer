@@ -1,0 +1,68 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%% DO NOT TOUCH THIS SECTION %%%%%%%%%%%%%%%%%%%%%%
+% LATEX PACKAGES
+\documentclass[aspectratio=169]{beamer}
+\usepackage[english]{babel}
+\usepackage{calc}
+\usepackage[absolute,overlay]{textpos}
+\usepackage{graphicx}
+\usepackage{subfig}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\usepackage{mathtools}
+\usepackage{comment}
+\usepackage{MnSymbol,wasysym}
+\usepackage{caption}
+\usepackage{tikz}
+\usetikzlibrary{arrows}
+
+% STYLING
+%\setbeamertemplate{navigation symbols}{} % remove navigation symbols
+\mode<presentation>{\usepackage{_Styling/beamerthemetud}}
+
+% BIB & CITATION SETTINGS
+\usepackage[backend=bibtex,firstinits=true,maxnames=30,maxcitenames=20,url=false,style=authoryear]{biblatex}
+\setlength\bibitemsep{0.3cm} % space between entries in the reference list
+\renewcommand{\bibfont}{\normalfont\scriptsize}
+\setbeamerfont{footnote}{size=\tiny}
+\renewcommand{\cite}[1]{\footnote<.->[frame]{\fullcite{#1}}}
+\setbeamertemplate{bibliography item}{}
+
+% TITLES
+\title[]{Veni Project: Eco-Design of Sustainable PP/PE}
+\institute[]{Delft University of Technology, The Netherlands}
+\author{Bessa Reasearch Group}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% Add bib files here
+\addbibresource{Example/ref.bib}
+%\addbibresource{Example2/ref.bib}
+%\addbibresource{Example3/ref.bib}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%% DO NOT TOUCH THIS SECTION %%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+% FRAME & BEAMER SETTINGS
+{\setbeamertemplate{footline}{\usebeamertemplate*{minimal footline}}
+\setbeamertemplate{headline}{\usebeamertemplate*{minimal headline}}
+\def\beamer@entrycode{\vspace*{-\headheight}}
+\frame{\titlepage}}
+{\setbeamertemplate{footline}{\usebeamertemplate*{minimal footline}}}
+\setbeamercovered{transparent}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% Add your main.tex here:
+\input{Example/main}
+\input{Example/main}
+\input{Example/main}
+
+\end{document}
