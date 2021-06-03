@@ -81,6 +81,16 @@ Befor you go, here are some good practices if using in a collaborative manner:
    Discuss with colleagues, and make the changes on a git branch. 
    Send a pull request when you're ready.
 
+I may be updating the template once in awhile may be also accept contributions from other git users. If you wish to use these updates follow these instructions:
+1) add this repo as a remote:
+    git remote add template https://github.com/NMudunuru/TUDelftHorizontalBeamer
+2) Fetch changes from the template
+    git fetch --all
+3) Merge the changes
+    git merge template/[your local branch name] --allow-unrelated-histories
+4) This is bound to throw some merge conflicts as you. Clarify them and push the changes to remote origin.
+5) Sync with overleaf.
+
 ----------------------------------------------------------------------------------
 * TO IMPROVE:
 - Progress bar addition
