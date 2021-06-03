@@ -22,6 +22,17 @@
 %\setbeamertemplate{navigation symbols}{} % remove navigation symbols
 \mode<presentation>{\usepackage{_Styling/beamerthemetud}}
 
+% TABLE OF CONTENT
+\setbeamertemplate{section in toc}[ball unnumbered]
+\setbeamertemplate{subsection in toc}[ball unnumbered]
+\AtBeginSection[]
+{
+\begin{frame}
+\frametitle{Agenda}
+\tableofcontents[ currentsubsection, hideothersubsections]
+\end{frame}
+}
+
 % BIB & CITATION SETTINGS
 \usepackage[backend=bibtex,firstinits=true,maxnames=30,maxcitenames=20,url=false,style=authoryear]{biblatex}
 \setlength\bibitemsep{0.3cm} % space between entries in the reference list
